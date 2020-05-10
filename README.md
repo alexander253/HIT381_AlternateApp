@@ -1,1 +1,0 @@
-# HIT381_AlternateApp
