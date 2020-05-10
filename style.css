@@ -172,7 +172,7 @@ left: 16px;
 
 
 .banner-title {
-  color: var(--mainGreen);
+  color: black;
   font-size: 4rem;
 }
 
@@ -259,7 +259,7 @@ left: 16px;
   width: 100px;
   height: 35px;
   border-radius: 5px;
-  background: green;
+  background: black;
   background-size: 200%;
   color: #fff;
   outline: none;
@@ -557,7 +557,7 @@ img {
 
 
       .open-button {
-        background:green;
+        background:black;
         color: white;
         padding: 16px 20px;
         border: none;
@@ -678,12 +678,12 @@ img {
 }
 .mItem a{
   right: 30px;
-  background-color: green;
+  background-color: black;
 }
 
 
 i {
-  color: green;
+  color: black;
 }
 
 a i{
@@ -711,12 +711,33 @@ a i{
   margin-top: 5px;
 }
 
+.help{
+  text-align: left;
+}
+
+.mobile_only{
+  display: none;
+}
+
 /*Mobile Display*/
 
 @media only screen and (max-width: 750px) {
+
+  .mobile_only{
+    display: block;
+    text-align: center; }
+
+.heading{
+  display:none;
+}
+
+.greeting1{
+  display: none;
+}
+
   .nav_menu a{
-    padding: 30px 30px;
-    margin-left: 2px;
+    padding: 20px 20px;
+    margin-left: 0px;
     margin-right:2px;
     margin-bottom: 10px;
 
@@ -732,12 +753,23 @@ img{
 }
 
 .content{
-  display: block;
-  width: 100%;
-  height: 100%;
-
+  display: inline-grid;
+  width: 47%;
+  height: 130%;
+  margin-bottom: 20px;
 }
 
+.content h3{
+  font-size: 1em;
+}
+
+.content p{
+  display: none;
+}
+
+.wrap{
+  text-align: center;
+}
 
 .greeting h4, .greeting h3, .greeting p, .greeting1 h4, .greeting1 h3, .greeting1 p{
   font-size:1em;
@@ -756,6 +788,26 @@ padding-top: 10px;
   display: none;
 }
 
+.mItem{
+  width: 45%;
+    margin-bottom: 20px;
+}
+
+.mItem h3{
+  font-size: 1.3em;
+}
+
+.mItem .overlay{
+  position: absolute;
+  top: 140px;
+  left: 100px;
+  text-align: left;
+}
+
+.overlay h3{
+  float:left;
+
+}
 .heading h1{
   font-size: 3em;
 }
@@ -811,7 +863,7 @@ footer{
 
 .banner-title {
   font-size: .7em;
-  float: left;
+  text-align: center;
 
 
 }
